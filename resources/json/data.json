@@ -1,0 +1,17 @@
+{
+    "content": [
+        {
+            "main_nav": {
+                "falcon_logo": "resources/img/icon.png",
+                "main_nav_aboutus": "About Us",
+                "main_nav_resources": "Resources",
+                "main_nav_contact": "Contact",
+                "main_nav_signup": "Sign Up"
+            },
+            "hero_text_box":{
+                "title":"Falcon - An Automation Tool.",
+                "subtitle":""
+            }
+        }
+    ]
+}
