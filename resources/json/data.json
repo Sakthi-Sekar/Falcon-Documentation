@@ -10,7 +10,25 @@
             },
             "hero_text_box":{
                 "title":"Falcon - An Automation Tool.",
-                "subtitle":""
+                "subtitle":"Software testing proves the existence of bugs not their absence.",
+                "btn_demo":"Schedule Live Demo",
+                "btn_login":"Login",
+                "heading_title":"Get all your testing done",
+                "heading_brief":"Test end to end user journey.",
+                "pay_basic":"Basic",
+                "pay_value_basic":"$123/ Per Month",
+                "pay_btn":"Buy Now!",
+                "pay_pro":"Pro",
+                "pay_value_pro":"$1500/ For 90 days",
+                "pay_premium":"Premium",
+                "pay_value_premium":"$3000/ Per Annum",
+                "pay_free":"Start Free trial",
+                "pay_value_free":"Free/ For 1 Week",
+                "trial_btn":"Start Now!"
+            },
+            "footer":{
+                "footer_title":"Copyright",
+                "footer_data":" ATMECS, Inc. | All Rights Reserved."
             }
         }
     ]

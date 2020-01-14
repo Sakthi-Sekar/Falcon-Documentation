@@ -5,82 +5,93 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,700i&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x icon" href="resources/img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="resources/js/script.js" type="text/template"></script>
     <title>Falcon</title>
 </head>
 
 <body>
+    <script id="falcon_homepage" type="text/template">
+    {{#content}}
     <header>
+       {{#main_nav}} 
         <nav>
             <img src="resources/img/icon.png" alt="Falcon" class="logo">
 
             <div class="row">
                 <ul class="main-nav">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">{{main_nav_aboutus}}</a></li>
+                    <li><a href="#">{{main_nav_resources}}</a></li>
                   
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">{{main_nav_contact}}</a></li>
+                    <li><a href="#">{{main_nav_signup}}</a></li>
 
                 </ul>
             </div>
         </nav>
+        {{/main_nav}}
+        {{#hero_text_box}}
         <div class="hero-text-box">
-            <h1>Falcon - An Automation Tool.</h1><br><br>
-            <h2>Software testing proves the existence of bugs not their absence.</h2><br> <a class="btn btn-full"
-                href="#">Schedule Live Demo</a>&nbsp; &nbsp; &nbsp;
-            <a class="btn btn-ghost" href="#">Login</a>
+            <h1>{{title}}</h1><br><br>
+            <h2>{{subtitle}}</h2><br> 
+            <a class="btn btn-full" href="#">{{btn_demo}}</a>&nbsp; &nbsp; &nbsp;
+            <a class="btn btn-ghost" href="#">{{btn_login}}</a>
         </div>
     </header>
     <section class="section-features">
         <div class="row">
 
-            <h2>Get all your testing done &mdash; Test end to end user journey.</h2><br>
+            <h2>{{heading_title}} &mdash; {{heading_brief}}</h2><br>
             <p class="long-copy">
 
             </p>
         </div>
         <div class="row">
             <div class="col span-1-of-4">
-                <h3>Basic</h3><br>
+                <h3>{{pay_basic}}</h3><br>
                 <p>
-                    <bold>$123/ Per Month</bold>
+                    <b>{{pay_value_basic}}</b>
                 </p><br>
-                <a class="btn btn-full" href="#">Buy Now!</a>
+                <a class="btn btn-full" href="#">{{pay_btn}}</a>
             </div>
             <div class="col span-1-of-4">
-                <h3>Pro</h3><br>
+                <h3>{{pay_pro}}</h3><br>
                 <p>
-                    <bold>$1500/ For 90 days</bold>
+                    <b>{{pay_value_pro}}</b>
                 </p><br>
-                <a class="btn btn-full" href="#">Buy Now!</a>
+                <a class="btn btn-full" href="#">{{pay_btn}}</a>
             </div>
             <div class="col span-1-of-4">
-                <h3>Premium</h3><br>
+                <h3>{{pay_premium}}</h3><br>
                 <p>
-                    <bold>$3000/ Per Annum</bold>
+                    <b>{{pay_value_premium}}</b>
                 </p><br>
-                <a class="btn btn-full" href="#">Buy Now!</a>
+                <a class="btn btn-full" href="#">{{{{pay_btn}}}}</a>
             </div>
             <div class="col span-1-of-4">
-                <h3>Start Free trial</h3><br>
+                <h3>{{pay_free}}</h3><br>
                 <p>
-                    <bold>Free/ For 1 Week</bold>
+                    <b>{{pay_value_free}}</b>
                 </p><br>
-                <a class="btn btn-full" href="#">Start Now!</a>
+                <a class="btn btn-full" href="#">{{trial_btn}}</a>
             </div>
 
         </div>
     </section>
+    {{/hero_text_box}}
+    {{#footer}}
     <div class="footer">
-        <span id="year"></span> Copyright &copy; ATMECS, Inc. | All Rights Reserved.&nbsp;&nbsp;
+        <span id="year"></span> {{footer_title}} &copy; {{footer_data}}&nbsp;&nbsp;
         <a href="#" class="fa fa-twitter" style="font-size:24px;"></a>
         <a href="#" class="fa fa-linkedin" style="font-size:24px;"></a>
         </footer>
     </div>
+    {{/footer}}
+    {{/content}}
+</script>
 </body>
-
+<div id="falcon-firstpage_panel"></div>
 </html>
